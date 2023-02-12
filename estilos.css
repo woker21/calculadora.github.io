@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.dark-mode-body{
+  background-color: #241a2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 28em;
+  width: 16em;
+  border: 4px solid #000000;
+  background-color: #030303;
+  border-radius: 30px;
+}
+
+.container .container-general{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30em;
+  width: 16em;
+}
+
+.container .calculadora {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.container .calculadora .container-btn {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  flex-direction: column;
+}
+
+#operadores {
+  width: 25%;
+  margin: auto;
+}
+#operadores .operadores-btn {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+#operadores .operadores-btn input {
+  background-color: #233e45;
+  color: #ffffff;
+  margin-bottom: 4px;
+  margin-right: 6px;
+  padding: 1.4em;
+  border-radius: 10px;
+}
+
+#operadores .operadores-btn input:hover{
+  background-color: #436a75; 
+}
+
+
+#botones {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#botones input:hover{
+  background-color: #332240;
+}
+#botones input {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #21152a;
+  color: #fff;
+  padding: 18px;
+  width: 32%;
+  height: 80%;
+  font-size: 1.1em;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+#textarea {
+  margin-bottom: 2vh;
+  width: 100%;
+  height: 5vh;
+  margin: 0 auto;
+}
+#textarea input {
+  background-color: #464545;
+  border-radius: 20px 20px 10px 10px;
+  border: 4px solid #141015;
+}
+#textarea input[type=text] {
+  font-size: 50px;
+  width: 98%;
+  height: 1.7em;
+  color: #fff;
+  text-align: right;
+}/*# sourceMappingURL=estilos.css.map */

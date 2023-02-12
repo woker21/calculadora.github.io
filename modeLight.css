@@ -1,0 +1,17 @@
+
+.light-mode-body{
+    background-color: #fdfbff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+.light-mode-input{
+    background-color: #7b2e89;
+}
+
+.light-mode-operadores-input{
+    background-color: #13811c;
+}

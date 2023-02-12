@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+} 
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 20%;
+    background-color: #3b3939;
+    border-radius: 30px;
+}
+
+.container .calculadora{
+    height: 100%;
+    width: 100%;
+}
+
+#operadores input{
+    padding: 3vh;
+    border-radius: 20px;
+}
+
+#botones input{
+    padding: 25px;
+    border-radius: 20px;
+}
+
+#textarea{
+    margin-bottom: 20px;
+}
+
+/*lo demas esta en sass */

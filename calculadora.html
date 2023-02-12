@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: Dark)" href="modeDark.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: Light)" href="modeLight.css">
+</head>
+<body>
+    <div id="change-mode" class="dark-mode-body">
+
+        <div class="container">
+            
+            
+            
+            <form name="calculadora" class="calculadora">
+                <div id="textarea">       
+                    <input  type="text" id="verResultado" name="ans" value="" autocomplete="off" readonly >
+                </div>
+                
+                <div class="container-general">
+                    
+                    
+                    
+                    <div class="container-btn">
+                        
+            <!--botones-->
+            <div id="botones">
+                
+                <input type="button" id="numero7" onclick="document.calculadora.ans.value+='7'" value="7">          
+                <input type="button" id="numero8" onclick="document.calculadora.ans.value+='8'" value="8">
+                <input type="button" id="numero9" onclick="document.calculadora.ans.value+='9'" value="9">
+                
+            </div>
+            <br>
+            
+            
+            <div id="botones">
+                
+                <input type="button" id="numero4" onclick="document.calculadora.ans.value+='4'" value="4">    
+                <input type="button" id="numero5" onclick="document.calculadora.ans.value+='5'" value="5">
+                <input type="button" id="numero6" onclick="document.calculadora.ans.value+='6'" value="6">
+                
+            </div>
+            <br>
+            
+            <div id="botones">
+                
+                <input type="button" id="numero1" onclick="document.calculadora.ans.value+='1'" value="1">
+                <input type="button" id="numero2" onclick="document.calculadora.ans.value+='2'" value="2">
+                <input type="button" id="numero3" onclick="document.calculadora.ans.value+='3'" value="3">
+                
+            </div>
+            <div id="botones">
+                <input type="button" id="btn-borrar" value="⌫" onclick="eliminarCaracter()" style="background-color: #233e45;">
+                <input type="button" id="numero0" onclick="document.calculadora.ans.value+='0'" value="0">
+                <input type="button" id="valorIgual" value="=" style="background-color: #233e45;" 
+                onclick="document.calculadora.ans.value=eval(document.calculadora.ans.value)">
+            </div>
+            <br>
+        </div>
+
+
+        <!--Operadores-->
+
+        <div id="operadores">
+            <div class="operadores-btn">
+
+                <input type="button" id="operador/" value="/" onclick="document.calculadora.ans.value+='/'">
+                <input type="button" id="operadorX" value="*" onclick="document.calculadora.ans.value+='*'">
+                <input type="button" id="operador-" value="-" onclick="document.calculadora.ans.value+='-'">
+                <input type="button" id="operador+" value="+" onclick="document.calculadora.ans.value+='+'">
+                <input type="reset" id="operadorC" value="C">
+                
+            </div>
+
+        </div>
+</div>
+    </form>
+</div>
+
+
+<div class="btn-mode">
+    <button id="cambiarTema" class="btn-change">Dark Mode</button>
+</div>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
